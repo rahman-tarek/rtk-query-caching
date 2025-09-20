@@ -1,3 +1,4 @@
+import Loader from "../components/Loader";
 import { useDeleteBlogMutation, useGetBlogsQuery } from "../redux/services/blogsApi";
 
 const Blogs = () => {
@@ -11,6 +12,7 @@ const Blogs = () => {
         <>
             <div className="max-w-7xl mx-auto py-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    {isLoading && <Loader />}
                     {
                         blogs.map((blog, index) => (
                             <div key={index} className="p-4 rounded-md shadow-md">
