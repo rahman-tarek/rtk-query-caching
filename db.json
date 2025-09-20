@@ -1,0 +1,95 @@
+{
+  "users": [
+    {
+      "id": "3",
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "age": 22,
+      "city": "Chicago"
+    },
+    {
+      "id": "4",
+      "name": "Diana Miller",
+      "email": "diana.miller@example.com",
+      "age": 28,
+      "city": "Houston"
+    },
+    {
+      "id": "5",
+      "name": "Ethan Davis",
+      "email": "ethan.davis@example.com",
+      "age": 35,
+      "city": "Phoenix"
+    },
+    {
+      "id": "6",
+      "name": "Fiona Garcia",
+      "email": "fiona.garcia@example.com",
+      "age": 27,
+      "city": "San Diego"
+    },
+    {
+      "id": "7",
+      "name": "George Wilson",
+      "email": "george.wilson@example.com",
+      "age": 32,
+      "city": "Dallas"
+    },
+    {
+      "id": "8",
+      "name": "Hannah Martinez",
+      "email": "hannah.martinez@example.com",
+      "age": 24,
+      "city": "San Jose"
+    },
+    {
+      "id": "9",
+      "name": "Ian Thompson",
+      "email": "ian.thompson@example.com",
+      "age": 29,
+      "city": "Austin"
+    },
+    {
+      "id": "10",
+      "name": "Julia Anderson",
+      "email": "julia.anderson@example.com",
+      "age": 26,
+      "city": "San Francisco"
+    },
+    {
+      "id": "1758394352305",
+      "name": "Tarek Rahman",
+      "email": "prosadsencharu@gmail.com",
+      "age": "25",
+      "city": "Jashore"
+    },
+    {
+      "id": "1758394405005",
+      "name": "Rahman Tarek",
+      "email": "john.doe@example.com",
+      "age": "23",
+      "city": "Silicon Valley"
+    },
+    {
+      "id": "1758394433436",
+      "name": "Tarek Rahman",
+      "email": "john.doe@example.com",
+      "age": "23",
+      "city": "Silicon Valley"
+    },
+    {
+      "id": "1758395686421",
+      "name": "Dulkar",
+      "email": "princeadan210@gmail.com",
+      "age": "26",
+      "city": "Kannada"
+    },
+    {
+      "id": "[object Undefined]",
+      "name": "Charlie",
+      "email": "princeadan210@gmail.com",
+      "age": "28",
+      "city": "Tokiyo"
+    }
+  ]
+}
