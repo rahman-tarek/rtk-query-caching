@@ -12,6 +12,14 @@ const blogsApi = createApi({
         getBlog: builder.query({
             query: (id) => `/users/${id}`
         }),
+        updateBlog: builder.mutation({
+            query: ({ id, ...rest }) => ({
+                url: `/users/${id}`,
+                method: "PATCH",
+                body: rest,
+            }),
+            invalidatesTags: (result, error, { id }) => [{ type: "Users", id }]
+        }),
         addBlog: builder.mutation({
             query: (blog) => ({
                 url: "/users",
@@ -31,5 +39,5 @@ const blogsApi = createApi({
     })
 })
 
-export const { useGetBlogsQuery, useGetBlogQuery, useAddBlogMutation, useDeleteBlogMutation } = blogsApi;
+export const { useGetBlogsQuery, useGetBlogQuery, useAddBlogMutation, useDeleteBlogMutation, useUpdateBlogMutation } = blogsApi;
 export default blogsApi;

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Loader from "../components/Loader";
 import { useDeleteBlogMutation, useGetBlogsQuery } from "../redux/services/blogsApi";
 
@@ -23,9 +24,9 @@ const Blogs = () => {
                                     <p>{blog.city}</p>
                                 </div>
                                 <div className="py-2 flex justify-between items-center">
-                                    <button
+                                    <Link to={`/blogs/${blog.id}`}
 
-                                        className="cursor-pointer outline-none px-2 py-1 rounded-sm bg-blue-800 text-white font-bold">Edit</button>
+                                        className="cursor-pointer outline-none px-2 py-1 rounded-sm bg-blue-800 text-white font-bold">Edit</Link>
                                     <button onClick={() => handleDelete(blog.id)} className="cursor-pointer outline-none px-2 py-1 rounded-sm bg-red-800 text-white font-bold">Delete</button>
                                 </div>
                             </div>

@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx'
 import Blogs from './pages/Blogs.jsx'
 import AddBlog from './pages/AddNew.jsx'
 import About from './pages/About.jsx'
+import UpdateUsers from './pages/UpdateUsers.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/add-blog" element={<AddBlog />} />
             <Route path="/about" element={<About />} />
+            <Route path='/blogs/:id' element={<UpdateUsers />} />
           </Route>
         </Routes>
       </BrowserRouter>

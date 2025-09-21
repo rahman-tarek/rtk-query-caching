@@ -2,14 +2,7 @@
   "users": [
     {
       "id": "3",
-      "name": "Charlie Brown",
-      "email": "charlie.brown@example.com",
-      "age": 22,
-      "city": "Chicago"
-    },
-    {
-      "id": "4",
-      "name": "Diana Miller",
+      "name": "David Miller",
       "email": "diana.miller@example.com",
       "age": 28,
       "city": "Houston"
@@ -29,24 +22,10 @@
       "city": "Dallas"
     },
     {
-      "id": "9",
-      "name": "Ian Thompson",
-      "email": "ian.thompson@example.com",
-      "age": 29,
-      "city": "Austin"
-    },
-    {
-      "id": "10",
-      "name": "Julia Anderson",
-      "email": "julia.anderson@example.com",
-      "age": 26,
-      "city": "San Francisco"
-    },
-    {
       "id": "22",
-      "name": "Diana Prince ",
+      "name": "Rahman Tarek",
       "email": "diana@gmail.com",
-      "age": "34",
+      "age": "25",
       "city": "Helsinki"
     }
   ]
