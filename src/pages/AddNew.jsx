@@ -5,11 +5,7 @@ const AddNew = () => {
     const [addBlog] = useAddBlogMutation()
     const { register, handleSubmit } = useForm()
     const onSubmit = async (data) => {
-        const blog = {
-            id: toString(Date.now()),
-            ...data
-        }
-        await addBlog(blog);
+        await addBlog(data);
     }
 
     return (
@@ -20,6 +16,8 @@ const AddNew = () => {
                     <form onSubmit={handleSubmit(onSubmit)}
                         className="flex flex-col gap-2"
                     >
+                        <label htmlFor="">UserId</label>
+                        <input {...register("id")} className="outline-none bg-gray-300 py-1 px-4 rounded-md" />
                         <label htmlFor="">Name</label>
                         <input {...register("name", { required: true, maxLength: 20 })} className="outline-none bg-gray-300 py-1 px-4 rounded-md" />
                         <label htmlFor="">Email</label>

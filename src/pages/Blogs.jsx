@@ -6,7 +6,7 @@ const Blogs = () => {
     const [deleteBlog] = useDeleteBlogMutation()
 
     const handleDelete = async (id) => {
-        await deleteBlog(id)
+        await deleteBlog(id) // Invalidates cache
     }
     return (
         <>

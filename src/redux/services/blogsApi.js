@@ -7,7 +7,7 @@ const blogsApi = createApi({
     endpoints: (builder) => ({
         getBlogs: builder.query({
             query: () => "/users",
-            providesTags: ["Users"]
+            providesTags: (users) => users ? users.map(({ id }) => ({ type: "Users", id })) : ["Users"]
         }),
         getBlog: builder.query({
             query: (id) => `/users/${id}`
@@ -26,7 +26,7 @@ const blogsApi = createApi({
                 method: "DELETE",
 
             }),
-            invalidatesTags: ["Users"]
+            invalidatesTags: (result, error, id) => [{ type: "Users", id }]
         })
     })
 })
